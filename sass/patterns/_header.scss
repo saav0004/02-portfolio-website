@@ -1,0 +1,176 @@
+.header {
+  .masthead {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.logo__div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo__name {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+
+.nav__div {
+  background-color: #394a59;
+  /* position absolute, priority over the rest */
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  transform: translateX(100%);
+  transition: transform 0.3s;
+}
+
+.nav__div__active {
+  transition: transform 0.5s;
+  transform: translateX(0);
+}
+
+.nav__li {
+  list-style: none;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav__list {
+  transition: all 0s;
+  margin: 0;
+  align-self: center;
+  display: grid;
+  gap: 4rem;
+}
+
+/* button styles */
+
+.btn {
+  display: inline-block;
+  padding: 0.55em 1.5em 0.5em;
+  background-color: #394a59;
+  border: 0.125rem solid #394a59;
+  color: #fff;
+  border-radius: 0.25em;
+
+  /* link necessary styles */
+  text-decoration: none;
+
+  /* button necessary styles */
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  &:hover,
+&:focus-visible {
+  background-color: #59758d;
+  border-color: #59758d;
+}
+}
+
+
+}
+
+/* ! Header End */
+
+.burger__menu {
+  width: 3.5rem;
+  padding: 0.25rem;
+  display: inline-flex;
+  gap: 0.6rem;
+  flex-direction: column;
+  z-index: 999999999999999;
+  cursor: pointer;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  .burger__span__top,
+.burger__span__centre,
+.burger__span__bottom {
+  background-color: #fff;
+  content: "";
+  padding: 0.2rem;
+  transition: all 0.3s;
+  border-radius: 10px;
+  box-shadow: 0 0.1rem 0.4rem black;
+}
+
+.burger__span__top.burger__active {
+  transform: rotate(45deg) translate(10px, 12px);
+  box-shadow: 0 0 0 transparent;
+}
+
+.burger__span__centre.burger__active {
+  background-color: transparent;
+  box-shadow: 0 0 0 transparent;
+}
+
+.burger__span__bottom.burger__active {
+  transform: rotate(-45deg) translate(10px, -12px);
+  box-shadow: 0 0 0 transparent;
+}
+}
+
+/* ! MEDIA QUERY NAV */
+
+@media only screen and (min-width: 45em) {
+  .burger__menu {
+    position: absolute;
+    top: -9999999999999999999999rem;
+  }
+  .nav__div {
+    position: initial;
+    transform: translateX(0);
+    transition: all 0;
+    width: initial;
+    height: initial;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: transparent;
+  }
+  .header .nav__list {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+}
+
+/* BANNER STYLES */
+
+.banner {
+  min-height: 60vh;
+  display: flex;
+  justify-content: flex-start; /* horizontal center */
+  align-items: center; /* vertical center */
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  background-image: linear-gradient(to bottom, #00000080, #00000080),
+    url(../images/test-picture-coffee-mac.jpg);
+  background-position: center;
+  background-size: cover;
+&__h2 {
+  color: #fff;
+}
+
+&__p {
+  color: #fff;
+}
+}
+
