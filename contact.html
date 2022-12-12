@@ -12,6 +12,150 @@
       rel="stylesheet"
     />
     <title>Document</title>
+    <script src="./main.js" defer></script>
   </head>
-  <body></body>
+
+  <body>
+    <header class="header">
+      <section class="container">
+        <nav class="masthead">
+          <div class="logo__div">
+            <a href="./index.html"><h1>Luciano Saavedra</h1></a>
+          </div>
+
+          <div class="nav__div">
+            <ul class="nav__list">
+              <li class="nav__li">
+                <a class="nav__link" href="./index.html">Home</a>
+              </li>
+              <li class="nav__li">
+                <a class="nav__link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav__li">
+                <a class="nav__link" href="">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="burger__menu"
+            tabindex="0"
+            aria-label="This is the menu that will allow you to navigate through the page"
+          >
+            <span class="burger__span__top"></span>
+            <span class="burger__span__centre"></span>
+            <span class="burger__span__bottom"></span>
+          </div>
+        </nav>
+      </section>
+    </header>
+
+    <section>
+      <div></div>
+    </section>
+
+    <main>
+      <section class="contact">
+        <div class="container">
+          <div class="contact__wrap">
+            <form action="#" class="contact__form">
+              <div class="form-unit full">
+                <h1 class="contact__title">Sign Up</h1>
+                <p></p>
+              </div>
+
+              <div class="form-unit">
+                <label for="fName">Full Name</label>
+                <input
+                  type="text"
+                  id="fName"
+                  name="fName"
+                  placeholder="Username"
+                />
+              </div>
+
+              <div class="form-unit">
+                <label for="company">Company</label>
+                <input
+                  type="text"
+                  id="company"
+                  name="company"
+                  placeholder="Company"
+                />
+              </div>
+
+              <div class="form-unit">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email"
+                />
+              </div>
+
+              <div class="form-unit">
+                <label for="tel">Phone</label>
+                <input type="tel" id="tel" name="tel" placeholder="Phone" />
+              </div>
+
+              <div class="form-unit">
+                <label class="message" for="message">message*</label>
+                <textarea
+                  class="message-box"
+                  id="message"
+                  name="message"
+                  required
+                  placeholder="Enter your message here"
+                ></textarea>
+              </div>
+
+              <div class="form-unit full">
+                <input class="btn" type="submit" value="Submit" />
+              </div>
+            </form>
+            <div class="sign-up__image"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <div>
+        <form action="results.html" method="GET ">
+          <input type="text" class="input-field" placeholder="Your Name" />
+          <input type="email" class="input-field" placeholder="Your Email" />
+          <input type="text" class="input-field" placeholder="Subject" />
+          <input type="text" class="input-field" placeholder="Your message" />
+          <button>Submit</button>
+        </form>
+      </div> -->
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <nav>
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Portfolio</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div>
+            <small> &copy; 2022 Luciano Saavedra</small>
+            <div class="footer__list__div">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Service</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
