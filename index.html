@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Luciano Saavedra</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,24 +21,30 @@
     />
     <script src="./main.js" defer></script>
   </head>
-  <body>
+  <body id="body">
     <header class="header">
       <section class="container">
         <nav class="masthead">
           <div class="logo__div">
-            <a class="logo__name">Luciano Saavedra</a>
+            <a class="logo__name"><h1>Luciano Saavedra</h1></a>
           </div>
 
           <div class="nav__div">
             <ul class="nav__list">
               <li class="nav__li">
-                <a class="nav__link" href="./index.html">Home</a>
+                <a class="nav__link" href="./index.html"
+                  ><i class="fa-solid fa-house-user"></i>Home</a
+                >
               </li>
               <li class="nav__li">
-                <a class="nav__link" href="./portfolio.html">Portfolio</a>
+                <a class="nav__link" href="./portfolio.html"
+                  ><i class="fa-sharp fa-solid fa-palette"></i></i>Portfolio</a
+                >
               </li>
               <li class="nav__li">
-                <a class="nav__link" href="">Contact</a>
+                <a class="nav__link" href="./contact.html"
+                  ><i class="fa-solid fa-envelope"></i>Contact</a
+                >
               </li>
             </ul>
           </div>
@@ -49,147 +62,141 @@
       </section>
     </header>
 
-    <!-- Banner start -->
-    <section class="banner">
-      <div class="container">
-        <div class="banner__content">
-          <h2 class="banner__h2">Welcome to Luciano Saavedra</h2>
-          <p class="banner__p">
-            I am a student at the Mobile Application Design and Development
-            program at Algonquin College. I enjoy making websites!
-          </p>
-          <button class="btn">Portfolio</button>
+    <main>
+      <!-- Banner start -->
+      <section class="banner">
+        <div class="container">
+          <div class="banner__content">
+            <h2 class="banner__title">Welcome to Luciano Saavedra</h2>
+            <p class="banner__text">
+              I am a student at the Mobile Application Design and Development
+              program at Algonquin College. I enjoy making websites!
+            </p>
+            <button class="btn btn--secondary">Contact me</button>
+          </div>
         </div>
-      </div>
-    </section>
-    <!-- Banner end -->
+      </section>
+      <!-- Banner end -->
 
-    <!-- ! CARD CONTENT START -->
-    <section class="card-content">
-      <div class="container">
-        <h2>Software Stack</h2>
-        <ul role="list" class="cards">
-          <li class="cards__li">
-            <a href="#">
-              <img
-                class="cards__img"
-                src="./images/html-5.svg"
-                alt="The HTML 5 icon"
-              />
-              <h3>HTML5</h3>
-              <p>Knowledge of HTML5</p>
-            </a>
-          </li>
-          <li class="cards__li">
-            <a href="#">
-              <img
-                class="cards__img"
-                src="./images/css-3.svg"
-                alt="The CSS 3 icon"
-              />
-              <h3>CSS3</h3>
-              <p>
-                CSS3 fundamentals as well as implementing SASS and Bootstrap.
-              </p>
-            </a>
-          </li>
-          <li class="cards__li">
-            <a href="#">
-              <img
-                class="cards__img"
-                src="./images/JS.svg"
-                alt="The Javascript icon"
-              />
-              <h3>JavaScript</h3>
-              <p>
-                Manipulating HTML and CSS through JavaScript to create
-                interactive websites.
-              </p>
-            </a>
-          </li>
-          <li class="cards__li">
-            <a href="#">
-              <img
-                class="cards__img"
-                src="./images/ai.svg"
-                alt="The Adobe Illustrator icon"
-              />
-              <h3>Ai</h3>
-              <p>
-                Fundamentals of web and mobile application design such as
-                styling banners and creating logos.
-              </p>
-            </a>
-          </li>
-          <li class="cards__li">
-            <a href="#">
-              <img
-                class="cards__img"
-                src="./images/Ps.svg"
-                alt="The Photoshop icon"
-              />
-              <h3>Photoshop</h3>
-              <p>Non-Destructive editing with Photoshop</p>
-            </a>
-          </li>
-          <li class="cards__li">
-            <a href="#">
-              <img
-                class="cards__img"
-                src="./images/figma.svg"
-                alt="The Figma icon"
-              />
-              <h3>Figma</h3>
-              <p>
-                Working in teams to create mobile application wireframes,
-                designs, and making prototypes feel real.
-              </p>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!-- ! CARD CONTENT END -->
+      <!-- ! CARD CONTENT START -->
+      <section>
+        <div class="card-group">
+          <ul role="list" class="container">
+            <h2 class="card-group__title">Software Stack</h2>
+            <li class="card">
+              <a href="#">
+                <div class="card__image">
+                  <img src="./images/html-5.svg" alt="The HTML 5 icon" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__title">HTML5</h3>
+                  <p>Knowledge of HTML5</p>
+                </div>
+              </a>
+            </li>
+            <li class="card">
+              <a href="#">
+                <div class="card__image">
+                  <img src="./images/css-3.svg" alt="The CSS 3 icon" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__title">CSS3</h3>
+                  <p>
+                    CSS3 fundamentals as well as implementing SASS and
+                    Bootstrap.
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="card">
+              <a href="#">
+                <div class="card__image">
+                  <img src="./images/JS.svg" alt="The Javascript icon" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__title">JavaScript</h3>
+                  <p>
+                    Manipulating HTML and CSS through JavaScript with the
+                    purpose of creating interactive websites.
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="card">
+              <a href="#">
+                <div class="card__image">
+                  <img src="./images/ai.svg" alt="The Adobe Illustrator icon" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__title">Ai</h3>
+                  <p>
+                    Fundamentals of web and mobile application design such as
+                    styling banners and creating logos.
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="card">
+              <a href="#">
+                <div class="card__image">
+                  <img src="./images/Ps.svg" alt="The Photoshop icon" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__title">Photoshop</h3>
+                  <p>Non-Destructive editing with Photoshop</p>
+                </div>
+              </a>
+            </li>
+            <li class="card">
+              <a href="#">
+                <div class="card__image">
+                  <img src="./images/figma.svg" alt="The Figma icon" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__title">Figma</h3>
+                  <p>
+                    Working in teams to create mobile application wireframes,
+                    designs, and making prototypes feel real.
+                  </p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- ! CARD CONTENT END -->
+    </main>
 
     <!-- ! FOOTER START -->
     <footer class="footer">
       <div class="container">
-        <div class="footer-content">
-          <a href="./" class="logo">
-            <img
-              class="logo__img"
-              src="./images/logo-ac.svg"
-              alt="Adventure cooperative logo"
-            />
-          </a>
+        <a href="./" class="logo">
+          <h3>Luciano Saavedra</h3>
+        </a>
 
-          <nav>
-            <ul>
-              <li>
-                <a href="#">About</a>
-              </li>
-              <li>
-                <a href="#">Blog</a>
-              </li>
-              <li>
-                <a href="#">Download</a>
-              </li>
-              <li>
-                <a href="#">Sign up</a>
-              </li>
-            </ul>
-          </nav>
+        <nav>
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="./portfolio.html">Portfolio</a>
+            </li>
+            <li>
+              <a href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
 
-          <div>
-            <small> &copy; 2022 Luciano Saavedra</small>
-            <div class="footer__list__div">
-              <a href="#">Privacy Policy</a>
-              <a href="#">Terms of Service</a>
-            </div>
+        <div>
+          <small> &copy; 2022 Luciano Saavedra</small>
+          <div class="footer__list__div">
+            <a href="#">Privacy Policy</a>
           </div>
         </div>
       </div>
     </footer>
+
     <!-- ! FOOTER END -->
   </body>
 </html>
