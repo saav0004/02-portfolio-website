@@ -1,5 +1,5 @@
 .card-group {
-  background-color: var(--color-primary-light);
+  background-color: var(--white);
 }
 
 .card-group .container {
@@ -12,7 +12,12 @@
 }
 
 .card-group__title {
+  color: var(--charcoal);
   grid-column: 1 / -1;
+}
+
+.card-group ul li a {
+  text-decoration: none;
 }
 
 .card {
@@ -53,7 +58,7 @@
 
 .card__title {
   font-size: 1.325rem;
-  color: var(--color-secondary-dark);
+  color: var(--charcoal);
   margin-bottom: 0.5rem;
   line-height: 1.3;
 }

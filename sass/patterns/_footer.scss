@@ -1,7 +1,8 @@
-.footer {
-  background-color: var(--color-primary);
-  color: #fff;
-  border-bottom: .5rem solid var(--color-secondary);
+footer {
+  background-color: var(--white);
+  color: var(--charcoal);
+  border-bottom: 0.4rem solid var(--charcoal);
+  border-top: 0.4rem solid var(--charcoal);
 }
 
 .footer .container {
@@ -13,18 +14,19 @@
 }
 
 .footer a {
-  color: #fff;
+  color: var(--charcoal);
   text-decoration: none;
 }
 
 .footer a:hover,
 .footer a:focus-visible {
-  color: var(--color-secondary);
+  color: var(--carolina-blue);
+  font-weight: bold;
 }
 
 .footer .logo {
   display: flex;
-  gap: .75rem;
+  gap: 0.75rem;
   align-items: center;
 }
 
@@ -41,11 +43,11 @@
 .footer ul {
   padding-left: 1.5rem;
   margin: 0;
-  border-left: .125rem solid var(--color-secondary);
+  border-left: 0.125rem solid var(--color-secondary);
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: .75rem;
+  gap: 0.75rem;
 }
 
 .footer .sub-footer {
@@ -54,7 +56,6 @@
 }
 
 @media only screen and (min-width: 45em) {
-
   .footer .container {
     flex-direction: row;
     justify-content: space-between;
@@ -69,13 +70,10 @@
   .footer small {
     flex: 1 0;
   }
-
 }
 
 @media only screen and (min-width: 60em) {
-
   .footer .site-title {
     font-size: 1.956rem;
   }
-
 }

@@ -32,13 +32,19 @@
           <div class="nav__div">
             <ul class="nav__list">
               <li class="nav__li">
-                <a class="nav__link" href="./index.html">Home</a>
+                <a class="nav__link" href="./index.html"
+                  ><i class="fa-solid fa-house-user"></i>Home</a
+                >
               </li>
               <li class="nav__li">
-                <a class="nav__link" href="">Portfolio</a>
+                <a class="nav__link" href="./portfolio.html"
+                  ><i class="fa-sharp fa-solid fa-palette"></i>Portfolio</a
+                >
               </li>
               <li class="nav__li">
-                <a class="nav__link" href="">Contact</a>
+                <a class="nav__link" href="./contact.html"
+                  ><i class="fa-solid fa-envelope"></i>Contact</a
+                >
               </li>
             </ul>
           </div>
@@ -55,15 +61,79 @@
         </nav>
       </section>
     </header>
-
-    <section class="banner">
-      <div class="container">
-        <div class="banner__content">
-          <h2 class="banner__title">Portfolio</h2>
-          <p class="banner__text">Here you can find some of my work</p>
+    <main>
+      <section class="banner">
+        <div class="container">
+          <div class="banner__content">
+            <h2 class="banner__title">Portfolio</h2>
+            <p class="banner__text">Here you can find some of my work</p>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <section>
+        <div class="card-group">
+          <ul role="list" class="container">
+            <h2 class="card-group__title">Software Stack</h2>
+            <li class="card">
+              <a
+                href="https://saav0004.github.io/mad9013-project-two-page-site/"
+              >
+                <div class="card__image">
+                  <img
+                    src="./images/Dragon-149393.svg"
+                    alt="Cartoonish dragon image"
+                  />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__title">Dungeons & Dragons Site</h3>
+                  <p>
+                    Two page site about Dungeons & Dragons using HTML5 and
+                    vanilla CSS3
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="card">
+              <a href="https://saav0004.github.io/fetch-github/">
+                <div class="card__image">
+                  <img
+                    src="./images/github-cat.svg"
+                    alt="Picture of the github cat"
+                  />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__title">GitHub Repository Finder</h3>
+                  <p>
+                    In this project I use the GitHub API to display the public
+                    repositories of any user.
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="card">
+              <a href="https://saav0004.github.io/tmdb-jamstack/">
+                <div class="card__image">
+                  <img
+                    src="./images/film-image.svg"
+                    alt="Picture of a film cartridge"
+                  />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__title">EZ VISION</h3>
+                  <p>
+                    Created a dynamic single page website using the TMDB API
+                    which searches for a TV series or movie title and displays
+                    the cast.
+                  </p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
     <footer class="footer">
       <div class="container">
         <a href="./" class="logo">
@@ -73,7 +143,7 @@
         <nav>
           <ul>
             <li>
-              <a href="#">Home</a>
+              <a href="./index.html">Home</a>
             </li>
             <li>
               <a href="./portfolio.html">Portfolio</a>

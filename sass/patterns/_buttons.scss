@@ -2,19 +2,16 @@
 input[type="submit"] {
   /* common styles */
   display: inline-block;
-  padding: .55em 1.5em .5em;
-  background-color: var(--color-primary);
+  padding: 0.55em 1.5em 0.5em;
+  background-color: var(--charcoal);
   border: 0.125rem solid var(--color-primary);
   color: #fff;
-  border-radius: .25em;
-  transition: 
-    background-color .2s,
-    border-color .2s,
-    color .2s;
-  
+  border-radius: 0.25em;
+  transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+
   /* link necessary styles */
   text-decoration: none;
-  
+
   /* button necessary styles */
   cursor: pointer;
   font-family: inherit;
@@ -29,16 +26,17 @@ input[type="submit"] {
 }
 
 .btn--secondary {
-  background-color: var(--color-secondary);
-  border-color: var(--color-secondary);
-  color: #000;
+  background-color: var(--imperial-red);
+  border-color: var(--imperial-red);
+  color: var(--white);
+  font-weight: bold;
 }
 
 .btn--secondary:hover,
 .btn--secondary:focus-visible {
-  background-color: var(--color-secondary-light);
-  border-color: var(--color-secondary-light);
-  color: #000;
+  background-color: var(--carolina-blue);
+  border-color: var(--carolina-blue);
+  color: var(--white);
 }
 
 .btn--outline {
@@ -54,7 +52,7 @@ input[type="submit"] {
 }
 
 .btn--small {
-  font-size: .75rem;
+  font-size: 0.75rem;
 }
 
 .btn--large {
