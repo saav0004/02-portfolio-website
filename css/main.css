@@ -2,7 +2,7 @@
   --ocean-green: #5fbb97ff;
   --charcoal: #294c60ff;
   --white: #fbfbfbff;
-  --imperial-red: #ef233cff;
+  --imperial-red: rgb(222, 32, 54);
   --carolina-blue: #00a5e0ff;
 }
 
@@ -448,6 +448,7 @@ header {
 .banner__text {
   font-size: 1.15rem;
   color: var(--white);
+  text-shadow: 3px 3px 3px black;
 }
 
 @media only screen and (min-width: 45em) {
@@ -570,7 +571,7 @@ input[type=submit] {
 .btn--secondary {
   background-color: var(--imperial-red);
   border-color: var(--imperial-red);
-  color: var(--white);
+  color: #fff;
   font-weight: bold;
 }
 
@@ -776,6 +777,7 @@ input[type=checkbox]:checked {
 
 .contact__title {
   margin-bottom: 0.5rem;
+  color: var(--charcoal);
 }
 
 .form-unit.full {
