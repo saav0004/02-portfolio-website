@@ -42,11 +42,21 @@ header {
     width: 100%;
     height: 100vh;
     display: flex;
+
+    a {
+      padding: 1.5rem;
+    }
+
+    a:hover {
+      background-color: var(--carolina-blue);
+      border-radius: 5px;
+    }
   }
 
   .nav__div .nav__list .nav__li a {
     list-style: none;
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 0.5rem;
   }

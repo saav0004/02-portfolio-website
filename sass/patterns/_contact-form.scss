@@ -3,8 +3,7 @@
   display: flex;
   align-items: center;
   padding: 1.5rem 0;
-  background-color: var(--color-secondary);
-  background-image: url(/images/sign-up-image.jpg);
+  background-color: var(--white);
   background-position: center;
   background-size: cover;
 }
@@ -23,16 +22,6 @@
 
 .contact__title {
   margin-bottom: 0.5rem;
-}
-
-.contact__image {
-  aspect-ratio: 16 / 9;
-  background-color: var(--color-secondary);
-  background-image: url("../images/contact-form.jpg");
-  background-size: cover;
-  background-position: center;
-  border-radius: 1.5rem;
-  box-shadow: 0 0.25rem 1rem #0002;
 }
 
 .form-unit.full {

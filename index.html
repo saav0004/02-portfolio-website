@@ -27,7 +27,7 @@
       <li><a href="#main">Skip to main content</a></li>
     </ul>
 
-    <header class="header">
+    <header class="header" tabindex="0">
       <section class="container">
         <nav class="masthead">
           <div class="logo__div">
@@ -37,17 +37,17 @@
           <div class="nav__div">
             <ul class="nav__list">
               <li class="nav__li">
-                <a class="nav__link" href="./index.html"
+                <a tabindex="0" class="nav__link" href="./index.html"
                   ><i class="fa-solid fa-house-user"></i>Home</a
                 >
               </li>
               <li class="nav__li">
-                <a class="nav__link" href="./portfolio.html"
+                <a tabindex="0" class="nav__link" href="./portfolio.html"
                   ><i class="fa-sharp fa-solid fa-palette"></i>Portfolio</a
                 >
               </li>
               <li class="nav__li">
-                <a class="nav__link" href="./contact.html"
+                <a tabindex="0" class="nav__link" href="./contact.html"
                   ><i class="fa-solid fa-envelope"></i>Contact</a
                 >
               </li>
@@ -87,23 +87,26 @@
       <!-- Banner end -->
 
       <!-- ! CARD CONTENT START -->
-      <section>
+      <section tabindex="0">
         <div class="card-group">
           <ul role="list" class="container">
             <h2 class="card-group__title">Software Stack</h2>
             <li class="card">
-              <a href="#">
+              <a aria-label="Knowledge of HTML 5 card" href="#">
                 <div class="card__image">
                   <img src="./images/html-5.svg" alt="The HTML 5 icon" />
                 </div>
                 <div class="card__content">
                   <h3 class="card__title">HTML5</h3>
-                  <p>Knowledge of HTML5</p>
+                  <p>
+                    Fundamental knowledge of HTML5 such as using the right tools
+                    to improve Google rankings.
+                  </p>
                 </div>
               </a>
             </li>
             <li class="card">
-              <a href="#">
+              <a aria-label="Description of CSS3 knowledge" href="#">
                 <div class="card__image">
                   <img src="./images/css-3.svg" alt="The CSS 3 icon" />
                 </div>
@@ -117,7 +120,7 @@
               </a>
             </li>
             <li class="card">
-              <a href="#">
+              <a aria-label="Describing knowledge of Java Script" href="#">
                 <div class="card__image">
                   <img src="./images/JS.svg" alt="The Javascript icon" />
                 </div>
@@ -131,7 +134,10 @@
               </a>
             </li>
             <li class="card">
-              <a href="#">
+              <a
+                aria-label="Describing the fundamentals of web development"
+                href="#"
+              >
                 <div class="card__image">
                   <img src="./images/ai.svg" alt="The Adobe Illustrator icon" />
                 </div>
@@ -145,7 +151,7 @@
               </a>
             </li>
             <li class="card">
-              <a href="#">
+              <a aria-label="describes knowledge of Photo shop" href="#">
                 <div class="card__image">
                   <img src="./images/Ps.svg" alt="The Photoshop icon" />
                 </div>
@@ -156,7 +162,10 @@
               </a>
             </li>
             <li class="card">
-              <a href="#">
+              <a
+                aria-label="describes knowledge of the figma software"
+                href="#"
+              >
                 <div class="card__image">
                   <img src="./images/figma.svg" alt="The Figma icon" />
                 </div>

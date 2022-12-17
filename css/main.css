@@ -289,9 +289,17 @@ header {
   height: 100vh;
   display: flex;
 }
+.header .nav__div__active a {
+  padding: 1.5rem;
+}
+.header .nav__div__active a:hover {
+  background-color: var(--carolina-blue);
+  border-radius: 5px;
+}
 .header .nav__div .nav__list .nav__li a {
   list-style: none;
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 0.5rem;
 }
@@ -400,7 +408,7 @@ header {
   }
 }
 .banner1 {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/test-picture-coffee-mac.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/mohammad-rahmani-8qEB0fTe9Vw-unsplash.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -540,7 +548,7 @@ input[type=submit] {
   display: inline-block;
   padding: 0.55em 1.5em 0.5em;
   background-color: var(--charcoal);
-  border: 0.125rem solid var(--color-primary);
+  border: 0.125rem solid var(--charcoal);
   color: #fff;
   border-radius: 0.25em;
   transition: background-color 0.2s, border-color 0.2s, color 0.2s;
@@ -554,9 +562,9 @@ input[type=submit] {
 
 .btn:hover,
 .btn:focus-visible {
-  background-color: var(--color-primary-light);
-  border-color: var(--color-primary-light);
-  color: #fff;
+  background-color: var(--carolina-blue);
+  border-color: var(--carolina-blue);
+  color: var(--white);
 }
 
 .btn--secondary {
@@ -571,26 +579,6 @@ input[type=submit] {
   background-color: var(--carolina-blue);
   border-color: var(--carolina-blue);
   color: var(--white);
-}
-
-.btn--outline {
-  background-color: transparent;
-  color: var(--color-primary);
-}
-
-.btn--outline:hover,
-.btn--outline:focus-visible {
-  background-color: var(--color-primary);
-  border-color: var(--color-primary);
-  color: #fff;
-}
-
-.btn--small {
-  font-size: 0.75rem;
-}
-
-.btn--large {
-  font-size: 1.25rem;
 }
 
 .card-group {
@@ -769,8 +757,7 @@ input[type=checkbox]:checked {
   display: flex;
   align-items: center;
   padding: 1.5rem 0;
-  background-color: var(--color-secondary);
-  background-image: url(/images/sign-up-image.jpg);
+  background-color: var(--white);
   background-position: center;
   background-size: cover;
 }
@@ -789,16 +776,6 @@ input[type=checkbox]:checked {
 
 .contact__title {
   margin-bottom: 0.5rem;
-}
-
-.contact__image {
-  aspect-ratio: 16/9;
-  background-color: var(--color-secondary);
-  background-image: url("../images/contact-form.jpg");
-  background-size: cover;
-  background-position: center;
-  border-radius: 1.5rem;
-  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.1333333333);
 }
 
 .form-unit.full {
