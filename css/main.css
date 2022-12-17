@@ -185,7 +185,7 @@ h6 {
   }
 }
 *:focus-visible {
-  outline: 0.125rem solid var(--color-secondary);
+  outline: 0.125rem solid var(--imperial-red);
   outline-offset: 0.125rem;
 }
 
@@ -202,16 +202,16 @@ h6 {
   z-index: 100000;
   display: inline-block;
   padding: 0.55em 1.5em 0.5em;
-  background-color: var(--color-secondary);
-  border: 0.125rem solid var(--color-secondary);
-  color: #000;
+  background-color: var(--imperial-red);
+  border: 0.3rem solid var(--imperial-red);
+  color: var(--white);
   border-radius: 0.25em;
   /* link necessary styles */
   text-decoration: none;
 }
 
 .skip-links a:focus {
-  top: 0.75rem;
+  top: 1rem;
   outline: 0;
 }
 
@@ -220,8 +220,8 @@ h6 {
   position: fixed;
   bottom: -0.5rem;
   right: 1.5rem;
-  background-color: var(--color-secondary);
-  color: #000;
+  background-color: var(--imperial-red);
+  color: var(--white);
   padding: 0.5rem 0.5rem 1rem;
   border-radius: 0.5rem 0.5rem 0 0;
   text-decoration: none;
@@ -237,7 +237,7 @@ h6 {
 .to-top:hover,
 .to-top:focus-visible {
   bottom: 0;
-  color: #000;
+  color: var(--white);
   transform: translateY(0);
 }
 
@@ -274,19 +274,20 @@ header {
   background-color: var(--charcoal);
   /* position absolute, priority over the rest */
   position: absolute;
-  width: 100%;
-  height: 100vh;
   top: 0;
   left: 0;
   display: flex;
   justify-content: center;
   align-content: center;
   transform: translateX(100%);
-  transition: transform 0.3s;
+  display: none;
 }
 .header .nav__div__active {
-  transition: transform 0.5s;
+  transition: transform 0.25s;
   transform: translateX(0);
+  width: 100%;
+  height: 100vh;
+  display: flex;
 }
 .header .nav__div .nav__list .nav__li a {
   list-style: none;
@@ -383,7 +384,6 @@ header {
   .header .nav__div {
     position: initial;
     transform: translateX(0);
-    transition: all 0;
     width: initial;
     height: initial;
     display: flex;
@@ -399,13 +399,27 @@ header {
     padding: 0;
   }
 }
-.banner {
+.banner1 {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/test-picture-coffee-mac.jpg");
   background-position: center;
   background-size: cover;
 }
 
-.banner .container {
+.banner1 .container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 60vh;
+  padding: 3rem 1.5rem;
+}
+
+.banner2 {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/portfolio.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.banner2 .container {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -666,7 +680,7 @@ select {
   display: block;
   width: 100%;
   padding: 0.25rem 0.35rem;
-  border: 0.0625rem solid #ccc;
+  border: 0.0625rem solid var(--charcoal);
   border-radius: 0.25rem;
   font-size: inherit;
   font-family: inherit;
@@ -682,7 +696,7 @@ input:not([type=checkbox]):not([type=radio]):not([type=submit]):focus-visible,
 input:not([type=checkbox]):not([type=radio]):not([type=submit]):valid,
 textarea:valid,
 select:valid {
-  border-color: var(--color-secondary);
+  border-color: var(--charcoal);
 }
 
 label,
@@ -719,7 +733,7 @@ input[type=radio] {
   appearance: none;
   width: 1.5rem;
   height: 1.5rem;
-  border: 2px solid var(--color-secondary);
+  border: 2px solid var(--charcoal);
   margin: 0;
 }
 
@@ -780,7 +794,7 @@ input[type=checkbox]:checked {
 .contact__image {
   aspect-ratio: 16/9;
   background-color: var(--color-secondary);
-  background-image: url("/images/sign-up-image.jpg");
+  background-image: url("../images/contact-form.jpg");
   background-size: cover;
   background-position: center;
   border-radius: 1.5rem;

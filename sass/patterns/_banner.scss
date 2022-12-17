@@ -1,11 +1,26 @@
-.banner {
+.banner1 {
   background-image: linear-gradient(to bottom, #0009, #0009),
     url("../images/test-picture-coffee-mac.jpg");
   background-position: center;
   background-size: cover;
 }
 
-.banner .container {
+.banner1 .container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 60vh;
+  padding: 3rem 1.5rem;
+}
+
+.banner2 {
+  background-image: linear-gradient(to bottom, #0009, #0009),
+    url("../images/portfolio.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.banner2 .container {
   display: flex;
   justify-content: flex-start;
   align-items: center;
