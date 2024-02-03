@@ -107,9 +107,9 @@
   .hidden {
     opacity: 0;
     transition: all 1s;
-    filter: blur(2px);
+    filter: blur(0.5px);
     transform: translateX(-100%);
-    -webkit-filter: blur(2px);
+    -webkit-filter: blur(0.5px);
   }
 
   .show {
