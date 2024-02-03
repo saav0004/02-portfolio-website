@@ -3,9 +3,9 @@
 }
 
 .card-group .container {
-  --cols: 1;
+  --cols: 3;
   display: grid;
-  gap: 1.5rem;
+  gap: 1rem;
   grid-template-columns: repeat(var(--cols), 1fr);
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -13,7 +13,6 @@
 
 .card-group__title {
   color: var(--charcoal);
-  grid-column: 1 / -1;
 }
 
 .card-group ul li a {
@@ -37,16 +36,26 @@
     color: #000;
 
     transform: translateY(-0.5rem);
-    box-shadow: 0 0.5rem 0.75rem #0002;
   }
 }
 
-.card__image img {
-  object-fit: cover;
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  padding: 2.5rem;
+.card__icons {
+  overflow: hidden;
+
+  transition: transform 0.2s, box-shadow 0.2s;
+
+  &:hover,
+  &:focus-visible {
+    transform: translateY(-0.5rem);
+  }
 }
+
+// .card__image img {
+//   object-fit: cover;
+//   width: 100%;
+//   aspect-ratio: 1 / 1;
+//   padding: 0.4rem;
+// }
 
 .card__content {
   padding: 0rem 2rem 1rem 2rem;
@@ -56,12 +65,12 @@
   align-items: flex-start;
 }
 
-.card__title {
-  font-size: 1.325rem;
-  color: var(--charcoal);
-  margin-bottom: 0.5rem;
-  line-height: 1.3;
-}
+// .card__title {
+//   font-size: 1.325rem;
+//   color: var(--charcoal);
+//   margin-bottom: 0.5rem;
+//   line-height: 1.3;
+// }
 
 .card__text {
   flex-grow: 2;
@@ -69,7 +78,8 @@
 
 @media only screen and (min-width: 45em) {
   .card-group .container {
-    --cols: 2;
+    --cols: 3;
+    padding: 2rem;
   }
 
   .card__title {
@@ -79,10 +89,58 @@
 
 @media only screen and (min-width: 60em) {
   .card-group .container {
-    --cols: 3;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .card__icons img {
+    width: 100%;
+    padding: 0.4rem;
   }
 
   .card__title {
     font-size: 1.563rem;
+  }
+
+  // Slide in effect
+  .hidden {
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(2px);
+    transform: translateX(-100%);
+    -webkit-filter: blur(2px);
+  }
+
+  .show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+
+  .card__icons:nth-child(2) {
+    transition-delay: 100ms;
+  }
+
+  .card__icons:nth-child(3) {
+    transition-delay: 200ms;
+  }
+
+  .card__icons:nth-child(4) {
+    transition-delay: 300ms;
+  }
+
+  .card__icons:nth-child(5) {
+    transition-delay: 400ms;
+  }
+
+  .card__icons:nth-child(6) {
+    transition-delay: 500ms;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
   }
 }

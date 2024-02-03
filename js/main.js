@@ -1,6 +1,20 @@
 let burgerMenu = document.querySelector(".burger__menu");
 let burgerMenuActive = document.querySelector(".nav__div");
 
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    } else {
+      entry.target.classList.remove("show");
+    }
+  });
+});
+
+const hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach((element) => observer.observe(element));
+
 burgerMenu.addEventListener("click", burgerAppear);
 
 function burgerAppear() {

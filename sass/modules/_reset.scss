@@ -54,7 +54,7 @@ ol[role="list"] {
 
 /* A elements that don't have a class get default styles */
 a {
-  text-decoration-skip-ink: auto;
+  text-decoration: none;
   color: var(--color-secondary-dark);
   transition: color 0.2s, background-color 0.2s;
 }
