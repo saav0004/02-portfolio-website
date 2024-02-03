@@ -377,6 +377,10 @@ header {
 .burger__menu .burger__span__bottom.burger__active {
   transform: rotate(-45deg) translate(10px, -12px);
   box-shadow: 0 0 0 transparent;
+  -webkit-transform: rotate(-45deg) translate(10px, -12px);
+  -moz-transform: rotate(-45deg) translate(10px, -12px);
+  -ms-transform: rotate(-45deg) translate(10px, -12px);
+  -o-transform: rotate(-45deg) translate(10px, -12px);
 }
 
 /* ! MEDIA QUERY NAV */

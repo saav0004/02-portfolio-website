@@ -36,6 +36,8 @@ header {
     display: none;
   }
 
+  // Makes sure the body doesn't scroll when the menu is open
+
   .nav__div__active {
     transition: transform 0.25s;
     transform: translateX(0);
@@ -148,6 +150,10 @@ header {
   .burger__span__bottom.burger__active {
     transform: rotate(-45deg) translate(10px, -12px);
     box-shadow: 0 0 0 transparent;
+    -webkit-transform: rotate(-45deg) translate(10px, -12px);
+    -moz-transform: rotate(-45deg) translate(10px, -12px);
+    -ms-transform: rotate(-45deg) translate(10px, -12px);
+    -o-transform: rotate(-45deg) translate(10px, -12px);
   }
 }
 
