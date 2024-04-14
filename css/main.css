@@ -589,6 +589,11 @@ input[type=submit] {
   color: var(--white);
 }
 
+/*
+
+CARD GROUP ANIMATIONS START
+
+*/
 .card-group {
   background-color: var(--white);
 }
@@ -704,6 +709,47 @@ input[type=submit] {
     transition: none;
   }
 }
+/*
+CARD GROUP ANIMATIONS END
+*/
+/*
+CARD GROUP PROJECTS START
+*/
+.card-group__projects {
+  background-color: var(--white);
+}
+
+.grid-group__ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.card__project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  height: 100%;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  border-color: #000;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1333333333);
+}
+
+.card__project img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-text__project {
+  padding: 1rem;
+}
+
+/*
+CARD GROUP PROJECTS START
+*/
 input,
 textarea,
 select {
