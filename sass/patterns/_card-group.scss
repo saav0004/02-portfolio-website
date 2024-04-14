@@ -137,6 +137,10 @@
   .card__icons:nth-child(6) {
     transition-delay: 500ms;
   }
+
+  .card__icons:nth-child(7) {
+    transition-delay: 600ms;
+  }
 }
 
 @media (prefers-reduced-motion) {

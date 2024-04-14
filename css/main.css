@@ -305,13 +305,13 @@ header {
 }
 .header .nav__link {
   text-decoration: none;
+  border-radius: 5px;
 }
 @media only screen and (min-width: 50em) {
   .header .nav__link {
     text-decoration: none;
     color: var(--charcoal);
     padding: 0.35rem;
-    border-radius: 5px;
   }
   .header .nav__link:hover {
     background-color: var(--carolina-blue);
@@ -671,9 +671,9 @@ input[type=submit] {
   .hidden {
     opacity: 0;
     transition: all 1s;
-    filter: blur(2px);
+    filter: blur(0.5px);
     transform: translateX(-100%);
-    -webkit-filter: blur(2px);
+    -webkit-filter: blur(0.5px);
   }
   .show {
     opacity: 1;
@@ -694,6 +694,9 @@ input[type=submit] {
   }
   .card__icons:nth-child(6) {
     transition-delay: 500ms;
+  }
+  .card__icons:nth-child(7) {
+    transition-delay: 600ms;
   }
 }
 @media (prefers-reduced-motion) {
