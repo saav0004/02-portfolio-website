@@ -589,11 +589,7 @@ input[type=submit] {
   color: var(--white);
 }
 
-/*
-
-CARD GROUP ANIMATIONS START
-
-*/
+/* CARD GROUP ANIMATIONS START */
 .card-group {
   background-color: var(--white);
 }
@@ -626,7 +622,9 @@ CARD GROUP ANIMATIONS START
   flex-direction: column;
   transition: transform 0.2s, box-shadow 0.2s;
 }
-.card:hover, .card:focus-visible {
+
+.card:hover,
+.card:focus-visible {
   color: #000;
   transform: translateY(-0.5rem);
 }
@@ -635,7 +633,9 @@ CARD GROUP ANIMATIONS START
   overflow: hidden;
   transition: transform 0.2s, box-shadow 0.2s;
 }
-.card__icons:hover, .card__icons:focus-visible {
+
+.card__icons:hover,
+.card__icons:focus-visible {
   transform: translateY(-0.5rem);
 }
 
@@ -673,6 +673,7 @@ CARD GROUP ANIMATIONS START
   .card__title {
     font-size: 1.563rem;
   }
+  /* Slide in effect */
   .hidden {
     opacity: 0;
     transition: all 1s;
@@ -709,12 +710,9 @@ CARD GROUP ANIMATIONS START
     transition: none;
   }
 }
-/*
-CARD GROUP ANIMATIONS END
-*/
-/*
-CARD GROUP PROJECTS START
-*/
+/* CARD GROUP ANIMATIONS END */
+/*------------------------------------------------------------------------------*/
+/* CARD GROUP PROJECTS START */
 .card-group__projects {
   background-color: var(--white);
 }
@@ -723,13 +721,14 @@ CARD GROUP PROJECTS START
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
+  padding-left: 0;
 }
 
 .card__project {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 0rem;
   height: 100%;
   border-radius: 0.5rem;
   background-color: #fff;
@@ -737,19 +736,33 @@ CARD GROUP PROJECTS START
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1333333333);
 }
 
+.card__img {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.card__project:nth-child(1) .card__img {
+  background-color: #0f1013;
+}
+
 .card__project img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
+  overflow: clip;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.inner-card {
+  padding: 1rem;
 }
 
 .card-text__project {
   padding: 1rem;
 }
 
-/*
-CARD GROUP PROJECTS START
-*/
+/* CARD GROUP PROJECTS END */
 input,
 textarea,
 select {
