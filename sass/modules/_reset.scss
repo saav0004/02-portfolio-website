@@ -22,11 +22,6 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   margin: 0;
-
-  &.burger__active {
-    height: 100%;
-    overflow-y: hidden;
-  }
 }
 
 /* Update default margin */
