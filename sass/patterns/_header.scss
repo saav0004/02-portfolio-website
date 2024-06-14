@@ -23,7 +23,7 @@ header {
   }
 
   .nav__div {
-    background-color: var(--charcoal);
+    background-color: var(--white);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -43,8 +43,22 @@ header {
   }
 
   .nav__link {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
     text-decoration: none;
     border-radius: 5px;
+  }
+
+  .nav__link i {
+    display: inline-block;
+    margin-right: 0.5rem;
+    color: var(--charcoal); /* Icon color */
+  }
+
+  .nav__link p {
+    margin: 0;
+    color: var(--charcoal); /* Icon color */
   }
 
   @media only screen and (min-width: 50em) {
@@ -97,9 +111,9 @@ header {
     .nav__div {
       display: flex;
       flex-direction: row;
-      justify-content: flex-end;
       align-items: center;
       background-color: transparent;
+      gap: 4rem;
     }
     .nav__list {
       display: flex;
