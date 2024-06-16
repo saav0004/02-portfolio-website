@@ -27,12 +27,12 @@
       <li><a href="#main">Skip to main content</a></li>
     </ul>
 
-    <header class="header" tabindex="0">
+    <header class="header" id="nav" tabindex="0">
       <nav>
         <ul class="nav__div">
           <li class="nav__li">
             <a tabindex="0" class="nav__link" href="./portfolio.html">
-              <i class="fa-sharp fa-solid fa-palette"></i>
+              <i class="fa-sharp fa-solid fa-palette" aria-hidden="true"></i>
               <p>Portfolio</p>
             </a>
           </li>
@@ -41,8 +41,9 @@
               tabindex="0"
               class="nav__link"
               href="https://www.linkedin.com/in/luciano-saavedra/"
+              target="_blank"
             >
-              <i class="fa-solid fa-envelope"></i>
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
               <p>Contact</p>
             </a>
           </li>
@@ -60,8 +61,12 @@
               Development program at Algonquin College. I enjoy making websites
               and the intricacies of the Internet.
             </p>
-            <!-- Corrected code -->
-            <a href="./contact.html" class="btn btn--secondary">Contact me</a>
+            <a
+              href="https://www.linkedin.com/in/luciano-saavedra/"
+              class="btn btn--secondary"
+              target="_blank"
+              >Contact me</a
+            >
           </div>
         </div>
       </section>
@@ -78,7 +83,7 @@
             <!-- Vibes -->
             <li class="card__project">
               <img
-                src="./images/vibes-thumbnail.png"
+                src="./images/vibes-background.png"
                 alt="A screenshot of the Vibes application"
               />
 
@@ -93,10 +98,7 @@
             </li>
             <!-- Giftr -->
             <li class="card__project">
-              <img
-                src="./images/giftr-desktop.png"
-                alt="A screenshot of the Giftr Web application"
-              />
+              <img src="./images/giftr-native-app.png" alt="Giftr Logo" />
 
               <h3 class="card__title">Giftr</h3>
               <p class="card__text">
@@ -104,15 +106,15 @@
                 can log-in with Google and save your gift ideas for later.
               </p>
               <p>Technologies: React, Node, Express, MongoDb</p>
-              <a href="https://giftrapp.netlify.app/">
-                <p class="website__link">Website</p></a
+              <a href="https://giftrapp.netlify.app/" class="website__link"
+                >Website</a
               >
             </li>
 
             <!-- Giftr -->
             <li class="card__project">
               <img
-                src="./images/giftr-desktop.png"
+                src="./images/giftr-background.png"
                 alt="A screenshot of the Giftr Web application"
               />
 
@@ -129,7 +131,7 @@
 
             <li class="card__project">
               <img
-                src="./images/media-player.png"
+                src="./images/play-button-background.png"
                 alt="A logo depicting the media player website"
               />
 
@@ -141,24 +143,6 @@
               <p>Technologies: HTML, CSS, JavaScript, Web Audio API</p>
               <p>Repo:</p>
             </li>
-
-            <!-- Movie Night -->
-            <!-- 
-            <li class="card__project">
-              <img
-                src="./images/movie-night.png"
-                alt="A screenshot of Giftr application"
-              />
-
-              <h3 class="card__title">Movie Night</h3>
-              <p class="card__text">
-                Moive Night is an app much like Tinder but for movies. You and
-                your partner can swipe left or right on movies you want to
-                watch.
-              </p>
-              <p>Technologies: Flutter</p>
-              <p>Repo:</p>
-            </li> -->
           </ul>
         </div>
       </section>
@@ -197,10 +181,7 @@
     <footer class="footer">
       <div class="container">
         <a href="./" class="logo">
-          <!-- prof comment
-            make this a <strong>
-          -->
-          <h3>Luciano Saavedra</h3>
+          <strong><h3>Luciano Saavedra</h3></strong>
         </a>
 
         <nav>
@@ -209,7 +190,9 @@
               <a href="./portfolio.html">Portfolio</a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/luciano-saavedra/"
+              <a
+                href="https://www.linkedin.com/in/luciano-saavedra/"
+                target="_blank"
                 >Contact</a
               >
             </li>
@@ -217,7 +200,7 @@
         </nav>
 
         <div>
-          <small> &copy; 2024 Luciano Saavedra</small>
+          <small>&copy; 2024 Luciano Saavedra</small>
           <div class="footer__list__div">
             <a href="#">Privacy Policy</a>
           </div>
