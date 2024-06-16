@@ -1,5 +1,5 @@
 .card-group__title {
-  color: var(--charcoal);
+  color: var(--carolina-blue);
   padding-top: 1rem;
 }
 
@@ -14,11 +14,12 @@
   display: grid;
   grid-template-rows: subgrid;
   grid-row: span 6;
+  border: 1px solid var(--grey);
 
   overflow: hidden;
   box-shadow: 0 0.25rem 0.5rem #0002;
-  background-color: #fff;
-  color: #000;
+  background-color: transparent;
+  color: var(--text-grey);
   text-decoration: none;
 
   // transitions
@@ -36,7 +37,6 @@
 
 .card__project:hover,
 .card__project:focus-visible {
-  color: #000;
   transform: translateY(-0.5rem);
 }
 
@@ -74,6 +74,7 @@
   }
 
   .card__title {
+    color: var(--text-grey);
     font-size: 1.08rem;
   }
 }
@@ -81,7 +82,7 @@
 /* CARD GROUP PROJECTS START */
 
 .card-group__projects {
-  background-color: var(--white);
+  background-color: var(--black);
 }
 
 // wrapper
@@ -107,11 +108,11 @@
 // ! TECHNOLOGIES CARDS
 
 .technologies__section {
-  background-color: var(--white);
+  background-color: var(--black);
 }
 
 .card-group__logos {
-  background-color: var(--white);
+  background-color: transparent;
   display: flex;
   justify-content: space-evenly;
   padding: 2rem 0 2rem 0;
@@ -121,6 +122,8 @@
 .card-group__logos img {
   width: 100px;
   height: auto;
+  filter: brightness(0.6);
+  -webkit-filter: brightness(0.6);
 }
 
 /* Responsive adjustments */

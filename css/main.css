@@ -1,9 +1,12 @@
 :root {
   --ocean-green: #5fbb97ff;
   --charcoal: #294c60ff;
-  --white: #fbfbfbff;
+  --white: rgb(236, 236, 236);
+  --black: #020212;
   --imperial-red: rgb(222, 32, 54);
   --carolina-blue: #00a5e0ff;
+  --grey: #333;
+  --text-grey: #959393;
 }
 
 /* Box sizing rules */
@@ -242,10 +245,6 @@ h6 {
   clip-path: polygon(0 0, 0.1% 0, 0.1% 0.1%, 0 0.1%);
 }
 
-header {
-  background-color: var(--white);
-}
-
 .header {
   /* button styles */
 }
@@ -267,7 +266,7 @@ header {
   text-decoration: none;
 }
 .header .nav__div {
-  background-color: var(--white);
+  background-color: var(--black);
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -292,21 +291,17 @@ header {
 .header .nav__link i {
   display: inline-block;
   margin-right: 0.5rem;
-  color: var(--charcoal); /* Icon color */
+  color: var(--text-grey); /* Icon color */
 }
 .header .nav__link p {
   margin: 0;
-  color: var(--charcoal); /* Icon color */
+  color: var(--text-grey); /* Icon color */
 }
 @media only screen and (min-width: 50em) {
   .header .nav__link {
     text-decoration: none;
     color: var(--charcoal);
     padding: 0.35rem;
-  }
-  .header .nav__link:hover {
-    background-color: var(--carolina-blue);
-    color: var(--white);
   }
 }
 .header .btn {
@@ -338,7 +333,6 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: transparent;
     gap: 4rem;
   }
   .header .nav__list {
@@ -349,21 +343,34 @@ header {
   }
 }
 .banner1 {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/code.jpg");
+  position: relative;
+  overflow: hidden;
+}
+
+.banner1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(9, 9, 9, 0.867), rgba(0, 0, 0, 0.8666666667)), url("../images/code-blurred-canva.png");
   background-position: center;
   background-size: cover;
 }
 
 .banner1 .container {
+  position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   min-height: 60vh;
   padding: 3rem 1.5rem;
+  z-index: 1;
 }
 
 .banner2 {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/portfolio.jpg");
+  background-image: linear-gradient(to bottom, rgba(6, 16, 44, 0.6), rgba(34, 21, 84, 0.6)), url("../images/portfolio.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -389,7 +396,6 @@ header {
 .banner__text {
   font-size: 1.15rem;
   color: var(--white);
-  text-shadow: 3px 3px 3px black;
 }
 
 @media only screen and (min-width: 45em) {
@@ -412,8 +418,8 @@ header {
   }
 }
 footer {
-  background-color: var(--white);
-  color: var(--charcoal);
+  background-color: var(--black);
+  color: var(--text-grey);
   border-bottom: 0.4rem solid var(--charcoal);
   border-top: 0.4rem solid var(--charcoal);
 }
@@ -427,13 +433,12 @@ footer {
 }
 
 .footer a {
-  color: var(--charcoal);
+  color: var(--text-grey);
   text-decoration: none;
 }
 
 .footer a:hover,
 .footer a:focus-visible {
-  color: var(--carolina-blue);
   font-weight: bold;
 }
 
@@ -527,7 +532,7 @@ input[type=submit] {
 }
 
 .card-group__title {
-  color: var(--charcoal);
+  color: var(--carolina-blue);
   padding-top: 1rem;
 }
 
@@ -542,10 +547,11 @@ input[type=submit] {
   display: grid;
   grid-template-rows: subgrid;
   grid-row: span 6;
+  border: 1px solid var(--grey);
   overflow: hidden;
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1333333333);
-  background-color: #fff;
-  color: #000;
+  background-color: transparent;
+  color: var(--text-grey);
   text-decoration: none;
   transition: transform 0.2s, box-shadow 0.2s;
   -webkit-transition: transform 0.2s, box-shadow 0.2s;
@@ -561,7 +567,6 @@ input[type=submit] {
 
 .card__project:hover,
 .card__project:focus-visible {
-  color: #000;
   transform: translateY(-0.5rem);
 }
 
@@ -598,12 +603,13 @@ input[type=submit] {
     padding: 2rem;
   }
   .card__title {
+    color: var(--text-grey);
     font-size: 1.08rem;
   }
 }
 /* CARD GROUP PROJECTS START */
 .card-group__projects {
-  background-color: var(--white);
+  background-color: var(--black);
 }
 
 .grid-group__ul {
@@ -624,11 +630,11 @@ input[type=submit] {
 }
 
 .technologies__section {
-  background-color: var(--white);
+  background-color: var(--black);
 }
 
 .card-group__logos {
-  background-color: var(--white);
+  background-color: transparent;
   display: flex;
   justify-content: space-evenly;
   padding: 2rem 0 2rem 0;
@@ -638,6 +644,8 @@ input[type=submit] {
 .card-group__logos img {
   width: 100px;
   height: auto;
+  filter: brightness(0.6);
+  -webkit-filter: brightness(0.6);
 }
 
 /* Responsive adjustments */
