@@ -88,7 +88,7 @@
 // wrapper
 .grid-group__ul {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   // grid-template-rows: auto auto auto auto auto;
 
   gap: 1rem;
@@ -103,6 +103,11 @@
 
 .card-text__project {
   padding: 1rem;
+}
+
+.website__link {
+  color: var(--carolina-blue);
+  text-decoration: none;
 }
 
 // ! TECHNOLOGIES CARDS
