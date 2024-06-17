@@ -18,6 +18,18 @@
     text-decoration: none;
   }
 
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
   .nav__div {
     background-color: var(--black);
     display: flex;
@@ -54,11 +66,12 @@
   }
 
   .nav__link p {
+    font-size: 1.25rem;
     margin: 0;
     color: var(--text-grey); /* Icon color */
   }
 
-  @media only screen and (min-width: 50em) {
+  @media only screen and (min-width: 45em) {
     .nav__link {
       text-decoration: none;
       color: var(--charcoal);
