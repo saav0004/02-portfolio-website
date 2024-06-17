@@ -1,20 +1,37 @@
 .banner1 {
-  background-image: linear-gradient(to bottom, #0009, #0009),
-    url("../images/code.jpg");
+  position: relative; // Make sure the container is positioned relatively
+  overflow: hidden; // Ensure content doesn't spill out
+}
+
+.banner1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(9, 9, 9, 0.867), #000d),
+    url("../images/code-blurred-canva.png");
   background-position: center;
   background-size: cover;
 }
 
 .banner1 .container {
+  position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   min-height: 60vh;
   padding: 3rem 1.5rem;
+  z-index: 1; // Ensure the content is above the blurred background
 }
 
 .banner2 {
-  background-image: linear-gradient(to bottom, #0009, #0009),
+  background-image: linear-gradient(
+      to bottom,
+      rgba(6, 16, 44, 0.6),
+      rgba(34, 21, 84, 0.6)
+    ),
     url("../images/portfolio.jpg");
   background-position: center;
   background-size: cover;
@@ -33,15 +50,14 @@
 }
 
 .banner__title {
-  font-size: 1.756rem;
+  font-size: 2.019rem;
   line-height: 1.3;
   color: var(--carolina-blue);
 }
 
 .banner__text {
-  font-size: 1.15rem;
+  font-size: 1rem;
   color: var(--white);
-  text-shadow: 3px 3px 3px black;
 }
 
 @media only screen and (min-width: 45em) {
@@ -55,8 +71,12 @@
 }
 
 @media only screen and (min-width: 60em) {
+  .banner1 .container {
+    min-height: 95vh;
+  }
+
   .banner__title {
-    font-size: 2.444rem;
+    font-size: 3.052rem;
   }
 
   .banner__text {

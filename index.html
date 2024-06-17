@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Luciano Saavedra</title>
+    <title>Luciano Saavedra - Developer</title>
+    <link rel="icon" href="./images/icons8-code-48.png" type=”image/x-icon”/>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -27,161 +28,155 @@
       <li><a href="#main">Skip to main content</a></li>
     </ul>
 
-    <header class="header" tabindex="0">
-      <section class="container">
-        <nav id="nav" class="masthead">
-          <div class="logo__div">
-            <a class="logo__name"><h1>Luciano Saavedra</h1></a>
-          </div>
-
-          <div class="nav__div">
-            <ul class="nav__list">
-              <li class="nav__li">
-                <a tabindex="0" class="nav__link" href="./index.html"
-                  ><i class="fa-solid fa-house-user"></i>Home</a
-                >
-              </li>
-              <li class="nav__li">
-                <a tabindex="0" class="nav__link" href="./portfolio.html"
-                  ><i class="fa-sharp fa-solid fa-palette"></i>Portfolio</a
-                >
-              </li>
-              <li class="nav__li">
-                <a tabindex="0" class="nav__link" href="./contact.html"
-                  ><i class="fa-solid fa-envelope"></i>Contact</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div
-            class="burger__menu"
-            tabindex="0"
-            aria-label="This is the menu that will allow you to navigate through the page"
-          >
-            <span class="burger__span__top"></span>
-            <span class="burger__span__centre"></span>
-            <span class="burger__span__bottom"></span>
-          </div>
-        </nav>
-      </section>
+    <header class="header" id="nav" tabindex="0">
+      <nav>
+        <h1 class="visually-hidden">
+          Luciano Saavedra - Web Developer / Front-end Developer
+        </h1>
+        <ul class="nav__div">
+          <li class="nav__li">
+            <a tabindex="0" class="nav__link" href="#projects">
+              <i class="fa-sharp fa-solid fa-palette" aria-hidden="true"></i>
+              <p>Portfolio</p>
+            </a>
+          </li>
+          <li class="nav__li">
+            <a
+              tabindex="0"
+              class="nav__link"
+              href="https://www.linkedin.com/in/luciano-saavedra/"
+              target="_blank"
+            >
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <p>Contact</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main id="main">
       <section class="banner1">
         <div class="container">
           <div class="banner__content">
-            <h2 class="banner__title">Welcome to my site!</h2>
+            <h2 class="banner__title">Hello, I'm Luciano!</h2>
             <p class="banner__text">
-              I am a student at the Mobile Application Design and Development
-              program at Algonquin College. I enjoy making websites and the
-              intricacies of the Internet.
+              I am a recent graduate from the Mobile Application Design and
+              Development program at Algonquin College. I enjoy making websites
+              and the intricacies of the Internet.
             </p>
-            <!-- prof comment
-              button cannot be a child of <a>
-              just put the .btn on the <a>
-            -->
-            <a href="./contact.html"
-              ><button class="btn btn--secondary">Contact me</button></a
+            <a
+              href="https://www.linkedin.com/in/luciano-saavedra/"
+              class="btn btn--secondary"
+              target="_blank"
+              >Connect with me</a
             >
           </div>
         </div>
       </section>
-      <!-- Banner end -->
 
-      <!-- ! CARD CONTENT START -->
-      <section tabindex="0">
-        <div class="card-group">
-          <ul role="list" class="container">
-            <h2 class="card-group__title">Software Stack</h2>
-            <li class="card">
-              <a aria-label="Knowledge of HTML 5 card" href="#">
-                <div class="card__image">
-                  <img src="./images/html-5.svg" alt="The HTML 5 icon" />
-                </div>
-                <div class="card__content">
-                  <h3 class="card__title">HTML5</h3>
-                  <p>
-                    Fundamental knowledge of HTML5 such as using the right tools
-                    to improve Google rankings.
-                  </p>
-                </div>
-              </a>
+      <!--! Banner end -->
+
+      <!--! Portfolio -->
+
+      <section id="projects" class="card-group__projects">
+        <div class="container">
+          <h2 class="card-group__title">Projects</h2>
+
+          <ul role="list" class="grid-group__ul">
+            <!-- Vibes -->
+            <li class="card__project">
+              <img
+                src="./images/vibes-background.png"
+                alt="A screenshot of the Vibes application"
+              />
+
+              <h3 class="card__title">Vibes</h3>
+              <p class="card__text">
+                An app tailored for the nightlife which allows users to find a
+                venue that suits their mood. Our team of students built a React
+                Native Application for our client, Vibes Social Network.
+              </p>
+              <p>Technologies: React Native, FireBase</p>
+              <p>Video demonstration</p>
             </li>
-            <li class="card">
-              <a aria-label="Description of CSS3 knowledge" href="#">
-                <div class="card__image">
-                  <img src="./images/css-3.svg" alt="The CSS 3 icon" />
-                </div>
-                <div class="card__content">
-                  <h3 class="card__title">CSS3</h3>
-                  <p>
-                    CSS3 fundamentals as well as implementing SASS and
-                    Bootstrap.
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li class="card">
-              <a aria-label="Describing knowledge of Java Script" href="#">
-                <div class="card__image">
-                  <img src="./images/JS.svg" alt="The Javascript icon" />
-                </div>
-                <div class="card__content">
-                  <h3 class="card__title">JavaScript</h3>
-                  <p>
-                    Manipulating HTML and CSS through JavaScript with the
-                    purpose of creating interactive websites.
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li class="card">
-              <a
-                aria-label="Describing the fundamentals of web development"
-                href="#"
+            <!-- Giftr -->
+            <li class="card__project">
+              <img src="./images/giftr-native-app.png" alt="Giftr Logo" />
+
+              <h3 class="card__title">Giftr</h3>
+              <p class="card__text">
+                Giftr allows you to save birthdays of people and gift ideas. You
+                can log-in with Google and save your gift ideas for later.
+              </p>
+              <p>Technologies: React, Node, Express, MongoDb</p>
+              <a href="https://giftrapp.netlify.app/" class="website__link"
+                >Website</a
               >
-                <div class="card__image">
-                  <img src="./images/ai.svg" alt="The Adobe Illustrator icon" />
-                </div>
-                <div class="card__content">
-                  <h3 class="card__title">Ai</h3>
-                  <p>
-                    Fundamentals of web and mobile application design such as
-                    styling banners and creating logos.
-                  </p>
-                </div>
-              </a>
             </li>
-            <li class="card">
-              <a aria-label="describes knowledge of Photo shop" href="#">
-                <div class="card__image">
-                  <img src="./images/Ps.svg" alt="The Photoshop icon" />
-                </div>
-                <div class="card__content">
-                  <h3 class="card__title">Photoshop</h3>
-                  <p>Non-Destructive editing with Photoshop</p>
-                </div>
-              </a>
+
+            <!-- Giftr -->
+            <li class="card__project">
+              <img
+                src="./images/giftr-background.png"
+                alt="A screenshot of the Giftr Web application"
+              />
+
+              <h3 class="card__title">Giftr</h3>
+              <p class="card__text">
+                Giftr allows you to save birthdays of people and gift ideas. You
+                can log-in with Google and save your gift ideas for later.
+              </p>
+              <p>Technologies: React, Node, Express, MongoDb</p>
+              <p>Repo:</p>
             </li>
-            <li class="card">
-              <a
-                aria-label="describes knowledge of the figma software"
-                href="#"
-              >
-                <div class="card__image">
-                  <img src="./images/figma.svg" alt="The Figma icon" />
-                </div>
-                <div class="card__content">
-                  <h3 class="card__title">Figma</h3>
-                  <p>
-                    Working in teams to create mobile application wireframes,
-                    designs, and making prototypes feel real.
-                  </p>
-                </div>
-              </a>
+
+            <!-- Media Player -->
+
+            <li class="card__project">
+              <img
+                src="./images/play-button-background.png"
+                alt="A logo depicting the media player website"
+              />
+
+              <h3 class="card__title">Apollo Player</h3>
+              <p class="card__text">
+                Apollo Player is a media player that allows you to play music
+                from your browser. It includes some of my favourite songs.
+              </p>
+              <p>Technologies: HTML, CSS, JavaScript, Web Audio API</p>
+              <p>Repo:</p>
             </li>
           </ul>
+        </div>
+      </section>
+
+      <!--! Portfolio END -->
+
+      <!-- ! CARD CONTENT START -->
+      <section class="technologies__section">
+        <div class="container">
+          <div class="card-group__logos">
+            <div class="card__icons">
+              <img src="./images/html-5.svg" alt="The HTML 5 icon" />
+            </div>
+            <div class="card__icons">
+              <img src="./images/css-3.svg" alt="The CSS 3 icon" />
+            </div>
+            <div class="card__icons">
+              <img src="./images/JS.svg" alt="The Javascript icon" />
+            </div>
+            <div class="card__icons">
+              <img src="./images/flutter_2.svg" alt="The flutter icon" />
+            </div>
+            <div class="card__icons">
+              <img src="./images/react_5.svg" alt="The React icon" />
+            </div>
+
+            <div class="card__icons">
+              <img src="./images/figma.svg" alt="The Figma icon" />
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -190,31 +185,29 @@
     <footer class="footer">
       <div class="container">
         <a href="./" class="logo">
-          <!-- prof comment
-            make this a <strong>
-          -->
-          <h3>Luciano Saavedra</h3>
+          <strong><h3>Luciano Saavedra</h3></strong>
         </a>
 
         <nav>
           <ul>
             <li>
-              <a href="./index.html">Home</a>
+              <a href="#projects">Portfolio</a>
             </li>
             <li>
-              <a href="./portfolio.html">Portfolio</a>
-            </li>
-            <li>
-              <a href="./contact.html">Contact</a>
+              <a
+                href="https://www.linkedin.com/in/luciano-saavedra/"
+                target="_blank"
+                >Contact</a
+              >
             </li>
           </ul>
         </nav>
 
         <div>
-          <small> &copy; 2022 Luciano Saavedra</small>
-          <div class="footer__list__div">
+          <small>&copy; 2024 Luciano Saavedra</small>
+          <!-- <div class="footer__list__div">
             <a href="#">Privacy Policy</a>
-          </div>
+          </div> -->
         </div>
       </div>
     </footer>
